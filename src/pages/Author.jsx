@@ -24,7 +24,7 @@ const Author = () => {
     );
     setAuthorArray(data);
     setAuthorNFTArray(data.nftCollection);
-    setIsLoading(true);
+    setIsLoading(false);
   };
 
   const followFunction = () => {
