@@ -53,7 +53,7 @@ const NewItems = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
-              <h2>New Items</h2>
+              <h2 data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="500" data-aos-delay="0">New Items</h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
@@ -118,7 +118,7 @@ const NewItems = () => {
           ) : (
             <OwlCarousel className="owl-theme" {...options}>
               {newItemsArray.map((item) => (
-                <div key={item.id}>
+                <div key={item.id} data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="500" data-aos-delay="0">
                   <div className="nft__item">
                     <div className="author_list_pp">
                       <Link
