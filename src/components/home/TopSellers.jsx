@@ -24,7 +24,7 @@ const TopSellers = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
-              <h2>Top Sellers</h2>
+              <h2 data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="500" data-aos-delay="0">Top Sellers</h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const TopSellers = () => {
                     </li>
                   ))
                 : topSellersArray.map((seller) => (
-                    <li key={seller.id}>
+                    <li key={seller.id} data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="500" data-aos-delay="0">
                       <div className="author_list_pp">
                         <Link to={`/author/${seller.authorId}`}>
                           <img

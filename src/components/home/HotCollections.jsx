@@ -53,7 +53,7 @@ const HotCollections = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
-              <h2>Hot Collections</h2>
+              <h2 data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="500" data-aos-delay="0">Hot Collections</h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
@@ -98,7 +98,7 @@ const HotCollections = () => {
           ) : (
             <OwlCarousel className="owl-theme" {...options}>
               {collectionArray.map((NFT) => (
-                <div key={NFT.id}>
+                <div key={NFT.id} data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="500" data-aos-delay="0">
                   <div className="nft_coll">
                     <div className="nft_wrap">
                       <Link to={`/item-details/${NFT.nftId}`}>
